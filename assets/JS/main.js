@@ -13,7 +13,8 @@ function vipVerifier() {
                       "pancopinco@gmail.it",
                       "pincopallino@gmail.it",
                       "johndoe@gmail.it",
-                      "janedoe@gmail.it"];
+                      "janedoe@gmail.it",
+                      "alwaisalone@hotmail.com"];
     for (let i = 0; i < vipsList.length; i++) {
         if (userMail === vipsList[i]) {
             console.log("sei dentro");
