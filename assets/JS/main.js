@@ -28,6 +28,8 @@ function vipVerifier() {
 
 function displayNone() {
     document.getElementById("result").style.display = "none";
+    const empty = document.getElementById("mail")
+    empty.value = '';
 }
 
 
