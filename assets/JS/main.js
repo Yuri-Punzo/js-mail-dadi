@@ -34,6 +34,10 @@ function vipVerifier() {
     }
 }
 
+function displayNone() {
+    document.getElementById("result").style.display = "none";
+}
+
 
 
 
