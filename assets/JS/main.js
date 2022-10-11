@@ -6,14 +6,6 @@ Chiedi all’utente la sua email, controlla che sia nella lista di chi può acce
 /* verifico se la mail fa parte della lista */
 /* stampo a schermo una risposta adeguata */
 
-/* const vipsList = ["pincopanco@gmail.it",
-                  "pancopinco@gmail.it",
-                  "pincopallino@gmail.it",
-                  "johndoe@gmail.it",
-                  "janedoe@gmail.it" ]; */
-
-
-
 function vipVerifier() {
     document.getElementById("result").style.display = "block";
     const vipsList = ["pincopanco@gmail.it",
@@ -37,9 +29,6 @@ function vipVerifier() {
 function displayNone() {
     document.getElementById("result").style.display = "none";
 }
-
-
-
 
 
 /* Gioco dei dadi
