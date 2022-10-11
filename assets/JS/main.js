@@ -10,20 +10,39 @@ function vipVerifier() {
     document.getElementById("result").style.display = "block";
     const userMail = document.getElementById("mail").value;
     const vipsList = ["pincopanco@gmail.it",
-                      "pancopinco@gmail.it",
-                      "pincopallino@gmail.it",
-                      "johndoe@gmail.it",
-                      "janedoe@gmail.it",
-                      "alwaisalone@hotmail.com"];
+        "pancopinco@gmail.it",
+        "pincopallino@gmail.it",
+        "johndoe@gmail.it",
+        "janedoe@gmail.it",
+        "alwaisalone@hotmail.com"];
+    /* if (vipsList.includes(userMail)) {
+
+    } questo INCLUDES in pratica fa quello che abbiamo fatto con il ciclo qua sotto */
+    let inOrOut = "sei fuori..."
     for (let i = 0; i < vipsList.length; i++) {
         if (userMail === vipsList[i]) {
-            console.log("sei dentro");
-            document.getElementById("in_or_out").innerHTML = "sei dentro !";
-        } else {
-            console.log("sei fuori");
-            document.getElementById("in_or_out").innerHTML = "sei fuori...";
+            inOrOut = "sei dentro !"
         }
     }
+    console.log(inOrOut);
+    document.getElementById("in_or_out").innerHTML = inOrOut;
+    /* altra possibilità sarebbe stata di dare il valore booleano true e false a X e poi fare un if else per andare a stampare a schermo: */
+
+    /* let x = false
+    for (let i = 0; i < vipsList.length; i++) {
+        if (userMail === vipsList[i]) {
+            x = true
+        }
+    }
+
+    if (x === true) {
+        console.log("sei dentro");
+        document.getElementById("in_or_out").innerHTML = "sei dentro";
+    } else {
+        console.log("sei fuori");
+        document.getElementById("in_or_out").innerHTML = "sei fuori";
+    } */
+
 }
 
 function displayNone() {
@@ -41,7 +60,7 @@ Prima di partire a scrivere codice poniamoci qualche domanda: Che ci sia un arra
 /* ne genero due in realtà, uno per me e uno per il pc  */
 /* confronta i due risultati, quello più alto vince */
 
-document.getElementById("randomNumber").onclick = function(){
+document.getElementById("randomNumber").onclick = function () {
     let playerResult = Math.floor(Math.random() * 6) + 1;
     let computerResult = Math.floor(Math.random() * 6) + 1;
     document.getElementById("player_result").innerHTML = playerResult;
@@ -55,5 +74,5 @@ document.getElementById("randomNumber").onclick = function(){
     } else {
         console.log("Pareggio");
         document.getElementById("theWinnerIs").innerHTML = "Draw ! Nobody Wins !"
-    }    
+    }
 }

@@ -35,15 +35,16 @@
     <section class="dice_game bg-info">
         <div class="container py-5">
             <div class="row">
-                <div class="col my-5">
-                    <button id="randomNumber">Roll</button>
-                    <div>
-                        You rolled: <span id="player_result"></span>
+                <div class="col d-flex flex-column align-items-center my-5">
+                    <h1 class="my-5">D6 Battle Against Randomizer</h1>
+                    <button class="mb-3" id="randomNumber">Roll</button>
+                    <div class="fs-3">
+                        You rolled: <span class="bold" id="player_result"></span>
                     </div>
-                    <div>
-                        Enemy rolled: <span id="computer_result"></span>
+                    <div class="my-2 fs-3">
+                        Randomizer rolled: <span id="computer_result"></span>
                     </div>
-                    <div id="theWinnerIs"></div>
+                    <div id="theWinnerIs" class="fs-1"></div>
                 </div>
             </div>
         </div>
