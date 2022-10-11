@@ -1,3 +1,11 @@
 .display_none{
     display: none;
 }
+
+.verifier{
+    height: 50vh;
+}
+
+.dice_game{
+    height: 50vh;
+}
