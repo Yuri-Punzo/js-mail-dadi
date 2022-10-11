@@ -29,7 +29,7 @@ function vipVerifier() {
             break;
         } else {
             console.log("sei fuori");
-            document.getElementById("in_or_out").innerHTML = "sei fuori.."
+            document.getElementById("in_or_out").innerHTML = "sei fuori..."
         }
     }
 }
