@@ -43,6 +43,19 @@ function vipVerifier() {
         document.getElementById("in_or_out").innerHTML = "sei fuori";
     } */
 
+    /* ancora un'altra possibilità, usando BREAK il ciclo si interrompe se trova la tua mail e scrive a schermo la stringa sei dentro. Invece se scorrendo non trova mai la tua mail darà risultato negativo. Se da qui si toglie il BREAK si rompe tutto, nel caso che ci siano valore negativi dopo quelli positivi il risultato verra dato negativo comunque..... */
+
+    /* for (let i = 0; i < vipsList.length; i++) {
+        if (userMail === vipsList[i]) {
+            console.log("sei dentro");
+            document.getElementById("in_or_out").innerHTML = "sei dentro"
+            break;
+        } else {
+            console.log("sei fuori");
+            document.getElementById("in_or_out").innerHTML = "sei fuori"
+        }
+    } */
+
 }
 
 function displayNone() {
