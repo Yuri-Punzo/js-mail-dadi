@@ -25,11 +25,11 @@ function vipVerifier() {
     for (let i = 0; i <= vipsList.length; i++) {
         if (userMail === vipsList[i]) {
             console.log("sei dentro");
-            document.getElementById("in_or_out").innerHTML = "sei dentro"
+            document.getElementById("in_or_out").innerHTML = "sei dentro !"
             break;
         } else {
             console.log("sei fuori");
-            document.getElementById("in_or_out").innerHTML = "sei fuori"
+            document.getElementById("in_or_out").innerHTML = "sei fuori.."
         }
     }
 }
